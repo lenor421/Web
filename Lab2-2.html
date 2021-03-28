@@ -4,14 +4,67 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script type="text/javascript" src="jquery.js"></script>
-<script>
-	
+<script  type="text/javascript">
+	$(document).ready(function(){
+		$("#b").click(function(){
+			var name = document.getElementById("name"), vod1 = document.getElementById("vod1");
+			var email = document.getElementById("email"), vod2 = document.getElementById("vod2");
+			var vod3 = document.getElementById("vod3"); vod4 = document.getElementById("vod4");
+			if (name.value ==""){
+			alert("Имя не заполнено")
+			document.getElementById('name').style.borderColor="red"}
+					else {
+						document.getElementById('name').style.borderColor="black";
+					}
+			if (vod1.value.length<4){
+			alert("Пароль должен содержать в себе больше 4 символов")
+			document.getElementById('vod1').style.borderColor="red"}
+					else {
+						document.getElementById('vod1').style.borderColor="black";
+					}
+			if (vod1.value!=vod2.value){
+			alert("пароли не совпадают");
+			vod1.value = "";
+			vod2.value = "";
+			document.getElementById('vod1').style.borderColor="red"
+					document.getElementById('vod2').style.borderColor="red"}
+					else {
+						document.getElementById('vod1').style.borderColor="black";
+						document.getElementById('vod2').style.borderColor="black";
+					}
+		if (email.value==""){
+			alert("Email не введен")
+			document.getElementById('email').style.borderColor="red"}
+					else {
+						document.getElementById('email').style.borderColor="black";
+					}
+		if (email.value.indexOf("@")==-1) {
+			alert("Email не содержит символ \"@\".");
+					document.getElementById('email').style.borderColor="red"}
+					else {
+						document.getElementById('email').style.borderColor="black";
+					}
+				if (vod3.value.length<11){
+					alert("Поле сообщения не содержит 10 символов")
+					document.getElementById('vod3').style.borderColor="red"}
+					else {
+						document.getElementById('vod3').style.borderColor="black";
+					}
+		})
+	})
 </script>
-
 </head>
 <body>
 <h1>Задание №2</h1>
-
+<form name="forme" onsubmit="return validate()">
+	<p class="text">Ваше имя* <input type="name" id="name" size=10 required></p>			
+	<p class="text">Пароль* <input type="password" id="vod1" size=10 required></p>			
+	<p class="text">Потверждение пароля* <input type="password" id="vod2" size=10 required></p>		
+	<p class="text">Email* <input type="email" id="email" required></p>	
+	<p class="text">Тема сообщения: <input type="vod4" size=15 required></p>		
+	<p class="text">Сообщение: <input type="text" id="vod3" size=30 required></p><br>		
+	<input type="button" value="Отправить" id="b" class="back"><input type="reset" class="back" value="Очистить форму">			
+	<p class="text">* - необходимые для заполнения поля</p>	
 <p><a href="Lab2.html">назад </a></p>		
 </body>
 </html>
