@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang"ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+	$(".btn-slide").click(function(){
+	$("#panel").slideToggle("slow");
+	$(this).toggleClass("active");
+	})
+$(".pane .delete").click(function(){
+	$(this).parents(".pane").animate({ opacity: "hide" }, "slow");
+	});		
+$(".run").click(function() {
+	$("#box").animate({opacity: "0.1", left:"+=400"}, 1200)
+	.animate({opacity: "0.4", top: "+=160", height: "40", width: "40"}, "slow") 
+	.animate({opacity: "1", left: "0", height: "50", width: "100"}, "slow")
+	.animate ({top: "0"}, "fast")
+	.slideUp()
+	.slideDown("slow")
+	return false;
+	})
+$(".accordion h3:first").addClass("active");
+	$(".accordion p:not(:first)").hide();
+	$(".accordion h3").click(function() {
+	$(this).next("p").slideToggle("slow")
+	.siblings("p: visible").slideUp("slow"); 
+	$(this).toggleClass("active"); 
+	$(this).siblings("h3").removeClass("active");
+	})
+})			
+	</script>
+</head> 
+<body>
+<h1>Примеры</h1>
+<h2>Пример №1</h2>
+		<div id="panel">Выдвижная панель</div>
+		<button class="btn-slide">Нажми!</button>
+<h2>Пример №2</h2>
+	 	<div class="pane">
+			<span class="delete">X</span>
+			<p>
+				jQuery - библиотека Javascript, фокусирующаяся на взаимодействии Javascript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный АРІ при работе с AJAX. 
+			</p>
+		</div>
+<h2>Пример №3</h2>
+		<button class="run">Начать движение</button>
+		<div class="control_block_container">
+			<div id="box">Управляемый блок</div>
+		</div>
+<h2>Пример №4</h2>
+		<div class="accordion">
+			<h3>Первый заголовок</h3> <p><b>Первый блок</b><br/>jQuery - библиотека Javascript, фокусирующаяся на взаимодействии Javascript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API при работе с AJAX. </p> 
+			<h3>Второй заголовок</h3> <p><b>Первый блок</b><br/>jQuery - библиотека Javascript, фокусирующаяся на взаимодействии Javascript и HTML Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API при работе с AJAX. </p> 
+			<h3>Третий заголовок</h3> <p><b>Первый блок</b><br/>jQuery - библиотека Javascript, фокусирующаяся на взаимодействии Javascript и HTML Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API при работе с AJAX. </p>
+		</div>
+<p><a href="Lab2.html">назад </a></p>
+</body>
+</html>
