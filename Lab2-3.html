@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang"ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>#dog {
+	position: absolute;
+	left: 100px;;
+	top: 120px;;
+}
+	</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#run1").click(function() {
+	$("#dog").animate({left: "+=100"})
+	})
+	$("#run2").click(function() {
+	$("#dog").animate({left:"-=100"})
+	})
+	$("#run3").click(function() {
+	$("#dog").animate({top:"+=100"})
+	})
+	$("#run4").click(function() {
+	$("#dog").animate({top:"-=100"})
+})
+})
+</script>
+</head>
+<body>
+<h1>Задание №3</h1>
+</h2>
+<button class="run" id="run1">вправо</button>
+<button class="run" id="run2">влево</button>
+<button class="run" id="run3">вверх</button>
+<button class="run" id="run4">вниз</button>
+<div id="dog"><img src="dog.jpg" width="300", height="350" class="dog"></div>   
+<p><a href="Lab2.html">назад </a></p>		
+</body>
+</html>
