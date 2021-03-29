@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+<style type="text/css">
+  #drag {font-size: x-large; border: thin solid black;
+  width: 13em; text-align: center; padding: 20px}
+  </style>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('#drag').mousedown(function(){
+  $('#drag').css( "background", "gray" );
+  });
+  $('#drag').mousemove(function(event) {
+  $('#drag').draggable();
+  });
+  $('#drag').mouseup(function(){
+  $('#drag').css( "background", "#4682B4" );
+  });
+  });
+  </script>
+</head>
+<body>
+<h1>Задание №5</h1>
+<!--<div id="drag"></div>-->
+<div id="drag"><img src="dog.jpg" width="300", height="350" class="dog"></div> 
+<p><a href="Lab2.html">назад </a></p>		
+</body>
+</html>
