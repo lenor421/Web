@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var all,t1,t2,t3,t4;
+			all=0;
+            t1=0;
+			t2=0;
+			t3=0;
+			t4=0;
+			$("#a").click(function(){
+				all+=1;
+				var inp = document.getElementsByName('k3');
+				val1=0;
+				val2=0;
+				val3=0;
+				val4=0;
+				for (var i = 0; i < inp.length; i++) {
+        			if (inp[i].checked) {
+            			if (i==0){
+							val1=1;
+							t1+=1
+                            t10= t1*100;
+							alert("Соотношение вашего голоса к остальным "+Math.floor(t10/all)+"%")
+							break
+						}
+						if (i==1){
+							val2=1;
+							t2+=1
+							t20= t2*100;
+							alert("Соотношение вашего голоса к остальным "+Math.floor(t20/all)+"%")
+							break
+						}
+						if (i==2){
+							val3=1;
+							t3+=1
+							t30= t3*100;
+							alert("Соотношение вашего голоса к остальным "+Math.floor(t30/all)+"%")
+							break
+						}
+						if (i==3){
+							val4=1;
+							t4+=1
+							t40= t4*100;
+							alert("Соотношение вашего голоса к остальным "+Math.floor(t40/all)+"%")
+							break
+						}
+        		} 
+		}})})
+	</script>
+</head>
+<body>
+<h1>Задание №6</h1>
+<form name="vopros" action="javascript:check();" class="vopros">
+    <div class="vopros">
+        <h2>Вопрос </h2>
+        <p>Какое время года вы любите больше всего?</p>
+        <div class="answer">
+            <input name="k3" value="val1" id="val1" type="radio" />Зима
+        </div>
+        <div class="answer">
+            <input name="k3" value="val1" id="val2" type="radio" />Весна
+        </div>
+        <div class="answer">
+            <input name="k3" value="val2" id="val3" type="radio" />Лето
+        </div> 
+        <div class="answer">
+            <input name="k3" value="val1" id="val4" type="radio" />Осень
+        </div> 
+    </div> 
+    <br>
+    <input type="button" value="Проверить" id="a">
+    </form> 
+<p><a href="Lab2.html">назад </a></p>		
+</body>
+</html>
