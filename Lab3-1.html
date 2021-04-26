@@ -1,0 +1,71 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+			<script>
+				let tek = 5;
+				function newnews(str) {
+					if (str.length==0) {
+						document.getElementById("news").innerHTML="";
+						return;
+						  }
+					  if (window.XMLHttpRequest) {
+						xmlhttp=new XMLHttpRequest();
+						 } else { 
+							xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+								  }
+						  xmlhttp.onreadystatechange=function() {
+					if (this.readyState==4 && this.status==200) {
+						  document.getElementById("news").innerHTML=this.responseText;
+						}
+					  }
+					xmlhttp.open("GET","test.php?tek="+tek,true);
+					   xmlhttp.send();
+					   tek+=5;
+					}
+			 </script>
+		
+		
+			<h1>Задание 1</h1>
+			<div style="width: 600px; border: 3px solid #000; padding:10px">
+				Новость №1 <br>
+				<p style="font-weight: bold; font-size: 30px">Киностудия Disney начала разработку четвертого фильма «Капитан Америка»</p>
+				Четвертая картина про героя комиксов Marvel Капитана Америку сейчас находится в стадии разработки студией Disney.<br><br>
+				<img src="https://kursk.com/files/images/news/2021/04/24/67179_n99374948.jpg" width="400px"><br>
+			</div><br>
+			<div style="width: 600px; border: 3px solid #000; padding:10px">
+				Новость №2 <br>
+				<p style="font-weight: bold; font-size: 30px">Volkswagen опубликовал цены на новый кроссовер Volkswagen Taos 2021 для рынка США</p>
+				В США стартовали продажи кроссовера Volkswagen Taos, который совсем скоро выйдет и на российский рынок.<br><br>
+				<img src="https://turbo-yandex-ru.clstorage.net/4z7QQM238/010326rdaq/bzGJynSEhwzE-EAAL4FwvcRJ2KtY3k8SrWJiqYJPCFxUv368NGcdNChtbACArKscQ_4_uQsfvZrBS48SmOSb_yE1xJNkxJsDw-oNViOObIfbU47-c5IZRYY9J-qIFDgDA7p61l4QalkFVlYv9NfUVxWlPehGCKvb_3LMPdfTqKhpPKfdZL7LM_nxDAkFpn6e9Rbegk-JbiScO0Kbg2Q-FQjKHv57O2NxKExzMOn9_EgtsRPEaE6TycFglDHI77qYVhyp50GUwTDP_yQRKLlZnOY0z69kokMwqwpvtbR_CBAl0wfQdDR8QSJeTy7f2uJDF6Uty3lniOH4Y545--uwulI9hNpgkfMJ-MYeFB66TLfzBt-DXYhxIb0uYJaYex86IO4t5VEFYnMfWm8158fLWB6HCsJwa77l5V-PN-fFjqFzO4XMd5btN8_eJiwJhnyJ0hLsvWOXWh-7Alqkt2QlFAPsIMN3CWNdEk9BDdj471warwv_RmeY98FPhQHg1K-ZUT2T4ECm5hn5-QkYG6Vli9g9xp1Us14mkCt9lqFjAh8X3S_tcB9GYwtjdy_72996M40j1W1TjO3EaY8XzMm4h2odvup3kcsjyMMJKjybY5bUD_mGYbhHH5QsUZu0fQ0GDOQc-Wk9e3QTakIgxejQRAeaNORtUb7d10KvJ_XwrKFyMbj9f6HGOPDMPj8shliN5TXHiUWhWzmVInmIinkzACjDOsVSKGFsG09sNt32zn0HqCHhc0qt59RnoiTF2oyuQymt-1SZ2xTOyTQYAKR7ntAx3K9dnHg2jT9yv59LFCM3xQnBbRZgTxRQZhLW-_ZALZIU9Et3mPzCTIk09eiTkU49r-1nusUPzOcnGyy9W7rTEteJQYRCHrwceZOoaRUQIOYJ8Ggkc3QQWHI1ysbVdCCdMc90fIvM6WGhMt70nLlgEpXhY7bDONjEKD0ogleW1x7_rFugbBOzLnKXs0I" width="400px"><br>
+			</div><br>
+			<div style="width: 600px; border: 3px solid #000; padding:10px">
+				Новость №3 <br>
+				<p style="font-weight: bold; font-size: 30px">15 французов ради науки провели 40 дней в темной холодной пещере</p>
+				Группа французских добровольцев провела 40 дней в пещере без света и контактов с внешним миром в рамках эксперимента по адаптации человека к необычным условиям.<br><br>
+				<img src="https://yandex-news.clstorage.net/1f1B9q286/0661cfexd3n/Px321NnLCSBJ4W6kCXoRm7W394ZhojHf1kDEAPrnsF0OOrTSYjmBXL_dKyTj1CDd4pVAJ0JH_V3s1soVyFTNo_qf5VLYmsmxiDB-4cpow1wn8aETdOvtlB9NWAr3KOrRBj2xVTDsUlpuzfD-YAgxCG2Q0DnTmOqDetHezB_FGuDwjunE2w8D5IegpD_P9pzNt7d4Q6wm4RXdBV4LMeAglUn6dNq3aZALqIK_dDrKvEhqXl37nZNrzDAaG0saydklPwGngVxMSCbErWgzCvHdgL81fIku4O-SH8GdA_GhKZLJcjoUsq-fTejJc3hxDTQDJxVRd50aaAD62tJNEEJdqD5J4IJQDYspQ2WscQs7W0L5fDAObeTq0tWG3Em9KO8Zxzm6n7EskkCsA_d4OIzzD-DVWLiX16OB9FVWS19LXaD1wCtH20bA4Uok6ryO8NNEur6wwuLtJp3eydUIcOkoWk-3_Fy5Lh2Lbs02uHYCdYGu0lD41B_jwnHTXIndi1ii_oPjR5ONS6XIZqz9TH0cCjN-eQbkaOfYH0PbQX4vaJHHcTta8q8VCyHCeT26CjTMIlfcuh4eKAQ9mtbKn4lS6njP7INdREMmAiQm-472VIW5dfgBLOmvkF1AXsU4JK4bCHOykLeg0coggrN_s4swiO2c1bPeU2aCNtvUyBiG0KF6T6nFnU3LZMohbHOKdx6FMjfwzWCoo18chVmDviDhUQ-yspe7Z1XCa0A2MHUOMUJumFbyV95mw_xXGsseQxSpNchnCxvDxGUBK2O0w_lfDL5yuYemYOPV1A7VjHNobVZLsPAad2sdBeoC9rc8CfYKb1rW8N4WKQA2nhAB0oGdYDXKLMTfzsRpBeTj8cm-34s4M75LZWzn2FNMW0UwI2dVznH6Gj_jkgigwPk0vUswxK4SXz_VVypD85cUyhWDVejwgeRLEcXLpcQsYfsKs1PGsHqyQeKn41rbT5FHPuMjlQT-OdC96B-LJgS8-7mBccxgmhJ23JngyrNZ28aYBJ1g-0AnS9NNACbHIGj2APffijB_f8uq4WnZlMYSTTAk599BcrHeeuOdDGhI-7M7Q3vFqlLXeBMWKAQx3lvJmAQRK_3O50FXB4OlDy5gdcg5GYD3M7BK7e3jml_H1AU4Lq8XAXB6HTvsHctrhfk0McW8gmFZlXDcWGaDutLaDZiAWCV_TiFM2U7DqQFjb3mJf9kBe3Q3QuqkaNDcDpeNeSIpF4ezcl_xLtVMY8D-9_CFN80o1Z3z1ZWvArCcmgJdi91hMseoRt1OS2fD7mf7ATZbATr19cTt4iNWFobfS77rK1eNOXWSdO1RDOhI_HR1BD6JqJhdd58dr4hznBZK0kKabv7AbMfdwI1vx-fpMwM4UQn7dfkDa6TnEZ0M3Ud4KmkRjXD8UzTsUYdqg7I3-cHxgqqRGbtXWCHEvV0awd5DU2K1x2nGkspPLoVr6r4JfpEC-3M5haQuoBmeydHM_yjiF054uZPy7xgAbAv7tDkKPMzqVVw0XZKphHBUEgzfzNLvv8JjjdjNgGSK4Cz9w3uXwTE3-M4kbOIXFo_dgvXpL5jLv3xVea7ZyC5AdbJ0TDDI71zQf5QfoAS-2ZaEVI3TKbcPYcyUxIggAuUgPonzWEv6MjlJIW8h1pGHlwW2LmuWjnJ8l_0nloFgAn3x-UK-DOrd0LhZ1qpLeh6egR_AnS82QSwF0QMIbctn6LJPOVDM-DMwzGSl4RVRi13C8ugnHUlzt106r5oPosF8ejKKt8ivV9pym9fnAjqeEInYAtBqs0DgCRCMjSbJYCx9CH4QDj51PMQkLKqVksYSCPrkrpLF_blSca4Vx-rGPX87jH2KbpIcPJOao4uwFNfG0E3U6j3CIUqZwgqmz-Eh-4K5mMs6Nr1F6ifgGNmJlYj-KacfS_q9lPekFYXiyPt7NEq5AWAf0X7SUWlDPVTXTBAG0igxBiXFUs8N7o2k4fmPdlhCOvN0TGwlqpjcgd1K-WnrXQm5vBq8ZN6Nqgu_cL0AcMti15w_1hejiDxc1MBcjtwv8A7pzJgIx-AMb6E2RzpRTL9zOQQlqm7Wng8WyPqmohnNdr2W-64XhexDev1-hjXPZdEQOFke4Yq-290AH86ZqvbCJcTYxMCpCCfmcgP1mQV_e74LpeGpnhTAEwm-pO6bCP13nnTnmIEhBDZxMYP1DCeYGXESk-bC-xdYAdAM3KF6AKCLWQXJ7YWpL38Jd9NL9vt0zyThIJCTQZIFOiAnWU1wcp0z7FmKKAu8_XlDcUjjFVH3mtcpTHwV2EPfTBOpfccgQ9uKxK2HrCf7xjFcgja_MkokoGcfUkAfS__gJl9D-rKePWkVimrI_LX1ifBEJ1UQMRUWqYp7mdhLFIOcI34DLsQQzAfvSOZh_gZyFojxOTKK6a_s3p4A2gF95uWVRL11mPCpUQyji3NwO8S-DSVQWPDek-cA9d5QChfFUG9_Co#DSD" width="400px"><br>
+			</div><br>
+			<div style="width: 600px; border: 3px solid #000; padding:10px">
+				Новость №4 <br>
+				<p style="font-weight: bold; font-size: 30px">В Apple AirDrop найдена уязвимость, которая затрагивает 1,5 миллиарда устройств</p>
+				AirDrop от Apple является довольно полезной функцией, которая позволяет моментально передавать файлы на устройства Apple, находящиеся рядом.<br><br>
+				<img src="https://3dnews.ru/assets/external/illustrations/2021/04/23/1038058/23894.jpg" width="400px"><br>
+			</div><br>
+			<div style="width: 600px; border: 3px solid #000; padding:10px">
+				Новость №5 <br>
+				<p style="font-weight: bold; font-size: 30px">Из аэропорта Уфы вылетел первый прямой рейс в Калининград в этом году</p>
+				Как сообщает портал gtrk-tv, в субботу 24 апреля прямой рейс в Калининград совершил вылет из Аэропорта "Уфа".<br><br>
+				<img src="https://images.sm-news.ru/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/04/25/regnum_picture_1557585910200145_normal.jpg.webp" width="400px"><br>
+			</div><br>
+			<span id="news"></span>
+			<form>
+				<input onclick="newnews(this.value)" type="button" value="ЕЩЁ" style="border: #000; background-color: black; color: white; width: 200px; font-size: medium;">
+			</form>
+			<br>
+			</body>
+	</html> 

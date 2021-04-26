@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	</head>
+	<body>
+			<script>
+			window.addEventListener("load",function() {
+  			var request = new XMLHttpRequest();
+  			request.open('GET','getrev.php',true);
+  			request.addEventListener('readystatechange', function() {
+   			if ((request.readyState==4) && (request.status==200)) {
+      			var welcome = document.getElementById('reviews');
+      			welcome.innerHTML = request.responseText;
+    			}
+  			});
+			request.send();
+			});
+    		function newrev(str) {
+      			alert("Отзыв отправлен!");
+				if (str.length==0) {
+    				document.getElementById("reviews").innerHTML="";
+    				return;
+  				}
+  				if (window.XMLHttpRequest) {
+    				xmlhttp=new XMLHttpRequest();
+  					} else {  
+    					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  					}
+ 				xmlhttp.onreadystatechange=function() {
+    			if (this.readyState==4 && this.status==200) {
+     				document.getElementById("reviews").innerHTML=this.responseText;
+    			}
+  				}
+  				var nam = document.getElementById("name").value, email = document.getElementById("email").value, rev=document.getElementById("rev").value;
+				var variables = "name="+nam+"&email="+email+"&rev="+rev;
+			   	xmlhttp.open("GET","rev.php?"+variables,true);
+			   	xmlhttp.send();
+				}
+			</script>
+</head>
+<body>
+	<h1>Задание 2</h1>
+	<h2>Ручной пылесос Xiaomi DX700, белый</h2>
+	<img src="https://cdn1.ozone.ru/s3/multimedia-a/wc1200/6012044710.jpg" alt="пылесос1" width="300px">
+	<img src="https://cdn1.ozone.ru/s3/multimedia-m/wc1200/6049781326.jpg" alt="пылесос1" width="300px">
+	<h2>Отзывы на пылесос</h2>
+	<h3>Добавьте свой отзыв!</h3>
+    <form method="get" id="ajax_form">
+		<p class="text">Ваше имя <input type="text" name="name" id="name"/></p>
+		<p class="text">EMAIL <input type="text" name="email" id="email"/></p>
+		<p class="text">Отзыв <input type="text" name="rev" id="rev"/></p>
+        <input onclick = "newrev(this.value)" type="button" id="btn" value="Отправить" />
+    </form>
+    <br>
+    <div id="result_form"></div> 
+	<span id = "reviews"></span> 
+</body>
+	</html> 
