@@ -1,0 +1,61 @@
+{
+    "news": {
+        "new": {
+            "6": {
+                "zag": "В NASA описали, как горные породы Марса способны поддерживать микробную жизнь",
+                "img": "mars.jpg",
+                "text": "Во время нового научного проекта ученые изучили химический состав марсианских метеоритов – горных пород, которые оторвались от поверхности планеты и оказались на Земле."
+            },
+            "7": {
+                "zag": "Фанаты «Спартака» и ЦСКА устроили массовую драку на юго-востоке Москвы",
+                "img": "football.jpg",
+                "text": "Массовая драка фанатов футбольных клубов «Спартак» и ЦСКА произошла в районе Орехово-Зуевского проезда на юго-востоке Москвы."
+            },
+            "8": {
+                "zag": "Получены первые фотографии электрона внутри экситона",
+                "img": "3.png",
+                "text": "Эти квазичастицы имеют большое значение в физике полупроводников Команда физиков из Японии и США получили первые снимки электрона внутри квазичастицы экситона, использовав передовые технологии."
+            },
+            "9": {
+                "zag": "Исследователями был применен новый способ измерения скорости расширения Вселенной",
+                "img": "4.jpeg",
+                "text": "Ученые их Стэнфордского университета нашли способ измерения скорости расширения Вселенной. Как оказалось, это возможно с помощью радиовсплесков."
+            },
+            "10": {
+                "zag": "Запущен радар для отслеживания космического мусора",
+                "img": "5.jpg",
+                "text": "Ученые запустили новый космический радар, который способен обнаружить даже крошечный мусор, находящийся на орбите Земли."
+            },
+            "11": {
+                "zag": "Долголетию японцев способствуют разнообразие отварной пищи и медленное ее пережевывание",
+                "img": "https://eer.ru/sites/default/files/field/image/picha.jpg",
+                "text": "Как рассказал один из пользователей соцсети WeChat, долголетие японцев объясняется системой их питания, а не занятием спортом. Последнее у японцев большой популярностью не пользуется."
+            },
+            "12": {
+                "zag": "Путин согласился объявить выходные с 1 по 10 мая",
+                "img": "may.jpg",
+                "text": "Президент Владимир Путин согласился с предложением Роспотребнадзора сделать нерабочими дни между майскими праздниками."
+            },
+            "13": {
+                "zag": "В Шотландии обнаружен отпечаток пальца возрастом 5 тыс. лет",
+                "img": "https://potokmedia.ru/wp-content/uploads/2019/09/547051c991013-1332936625.jpg",
+                "text": "Шотландские археологи выявили на Оркнейских островах отпечаток пальца, возраст которого примерно 5 тысяч лет. Его обнаружили на черепке древней глиняной посуды."
+            },
+            "14": {
+                "zag": "Карты «Мир» подключат к Apple Pay в конце апреля",
+                "img": "https://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2021-04/BED18435.JPG.jpg?itok=JKSiJuPL",
+                "text": "Глава Ассоциации участников рынка электронных денег и денежных переводов Виктор Достов сообщил, что банки России с конца апреля смогут подключать карты российской платежной системы «Мир» к сервису бесконтактной оплаты Apple Pay."
+            },
+            "15": {
+                "zag": "Хакеры украли чертежи новинок Apple и требуют выкуп, угрожая публикацией материалов",
+                "img": "https://www.ixbt.com/img/x780/n1/news/2021/3/4/Apple-CEO-Tim-Cook-on-the-list-of-witnesses-in-the-Epic-Games-case_large.jpg",
+                "text": "Группа хакеров утверждает, что украла чертежи различных аппаратных устройств Apple, а теперь грозит публикацией документов, если технологический гигант не заплатит огромный выкуп в десятки миллионов долларов."
+            },
+            "16": {
+                "zag": "Церемония вручения премии «Оскар» пройдет в четырех форматах",
+                "img": "https://yandex-images.clstorage.net/9HMs9n382/ee5decwOO_/UL_mq-LqZ58L2pRRPUkysg2lI56So55hwIy3MzDYterAmn6NU9c9yIZnvGdKq_s_aLQhAqUmIiYSod3Hk8qv_BD8vrb76ifKHY25F3YVNfgVvnLCkKKHd5jZ835mhfTw35kh_UTbP4vXAbtkSbTUFUuqVjjbF1JXY97Fl5_M8rMOvqnbkqtikDf2jGlyfBiGWa8GlJKhjQnXuo5EPdKPo--6YLt68zyA6yvAOQ7tzglwvGEi0ShOXVnSxaOw2faSV4-Y57fgW6Q48JV0WXA4tWSNILeYs44i_7mKczHJkJPvh3SoW9APjfcV6AwtzNMnf7lSEMEdeWpT5vu1tdjvnUmEmPedw1maG_GJSnRcG5RsqxGCo7OrO_ymi1oz_oSW7ppnoHjKDYrKG-IjP_3FAE-YTAjwNUp1YdzOvrnx1pFRlqzzm8hSjizOrVpZSi6xQK0JsbmlrybYgrtYEeWHjPa6d5l-1DiA1iv5EAPQ7glComwj4SJ6Vmn08p6B-tOqbqWq86zpQqk71LByS10vg0ufF4iOoIIj17G3cQfKho78p3W1Zc0JpsUV_xg75_scRrpzC84DXFJE6vSDhO35vkKOk-61yHWaLcuBbldxDI9lsQeam5OhPPqspnMO9JOdwqVks0frMJXRH-EOKfzGKUKxTTXOIE97Xt_Oob7lx6hzm6juo-pCkA33tmB_aQ-ncL87mYapngzcoax4EvKjr8OXdYVGwRKt0zfTLDLiwhl8omwt8AtyYVrB0b---9-Yd4CGwI7mRrQy2rdJYlU_sWGtKZiGgo4h_o2LVj_wqpTymGmkctoont0R5iYK1ukvf7NkAuEnbnx4xtecnO7xolObuOKO_3WxKOiBdnVzHYBluAyhkI28Ht6Yll8a_LOM0Yx9nEbyLK_HCeE4EujnAnmqWAjnL1BzTd74p7jm_ZFVrrjnhNl3qhTioU9gdyCldLcst7OKvy3CirRWBPc",
+                "text": "Американская киноакадемия объявит имена новых обладателей премии Оскар. Как заявили организаторы смотра, в этом году зрителей ждет абсолютно новый формат проведения церемонии."
+            }
+        }
+    }
+}
