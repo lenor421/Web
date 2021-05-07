@@ -1,0 +1,247 @@
+<html lang"ru">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<head>
+  <style>
+    #accordion, #tabs {
+      display: inline-block;
+      width: 50%;
+    }
+    #btn1, #btn2, #btn3, .vse {
+      padding: 10px;
+      background-color: aquamarine;
+    }
+  </style>
+  <link rel="stylesheet" href="jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="jquery-ui.js"></script>
+</head>
+<body>
+  <h1> Лабораторная работа №4</h1>
+  <h3>Шаяхметов Р.Д.</h3>
+  <h3>Вариант 6 - заполнение резюме</h3>
+  <p >Профессия для человека очень важна. Подойдите к вопросу выбора профессии серьезно. <br>Сейчас очень много профессий, которые могут быть Вам по душе, а так же приносить хорошую прибыль!.<br>
+  Предоставляем список самых популярных профессий на сегодняшний день:</p>
+  <span id="accordion">
+  <h3>Инженер.</h3> <div>
+  <p>После проседания экономики в 1990–2000-х годах начался экономический рост, открываются новые предприятия, а старые модернизируются. В народном хозяйстве нужны инженерные работники, причем самых разных профилей: конструкторы, механики, технологи и другие.</p>
+  </div> 
+  <h3>IT-специалист.</h3> <div>
+  <p>Считается, что сфера высоких технологий будет активно расти еще как минимум два десятилетия. Компьютерные системы в промышленности, средства коммуникации, мобильные приложения играют роль локомотивов развития этого сегмента. Требуются системные архитекторы, графические дизайнеры, программисты для разных языков и т. д. Одно условие – в этой отрасли нужно постоянно учиться, чтобы не отстать от прогресса.
+</p>
+  </div> 
+  <h3>Топ-менеджер.
+</h3> <div>
+  <p>От хорошего управленца во многом зависит успех компании: умение подключить экспертное сообщество и разработать стратегию развития, подобрать кадры и проконтролировать все процессы доступно не каждому. Поэтому и оплата их труда обычно стартует от 100 тысяч рублей.
+</p></div> 
+  <h3>Врач.</h3> <div>
+  <p>Медицина всего мира не стоит на месте, появляются новые способы лечения, сложная диагностическая и операционная аппаратура. Можно стать хирургом, урологом, отоларингологом, гинекологом, педиатром, анестезиологом – все специальности сейчас очень перспективны, а система частных клиник позволяет получать хороший доход.
+</p>
+  </div> 
+  <h3>Пилот.
+</h3> <div>
+    <p>Самолет давно признан самым быстрым и популярным видом транспорта, частота посадок в крупных аэропортах приблизилось к количеству прибытия автобусов к остановкам. От квалификации командира воздушного судна и его помощника зависят жизни сотен пассажиров, поэтому строгий отбор проходят только самые лучшие. В больших авиакомпаниях труд летчиков защищен законом, они получают большую зарплату и социальный пакет, в маленьких нередко приходится работать на износ.
+  </p>
+    </div> 
+  </span>
+<p>На данный момент наш сайт может предоставить 3 профессии, на которые Вы можете подать резюме:</p>
+    <div id="tabs"> <ul> 
+      <li><a href="#tabs-1">Инженер-технолог</a></li> 
+      <li><a href="#tabs-2">Уборщица</a></li> 
+      <li><a href="#tabs-3">Официант</a></li> </ul> 
+      <div id="tabs-1"> <h2>В компанию ООО "Трубопровод-УФА" требуется инженер-технолог</h2> 
+        <img src="i.jpg" alt="инженер-технолог" style=" width: 100%;">
+        <p><span style="font-weight: 700;">Требуемый опыт работы</span>: 3–6 лет <br>
+          Полная занятость, полный день<br>
+          Динамично развивающейся инженерно-производственной компании требуется <span style="font-weight: 700;">инженер-технолог</span> по обработке листового металла (координатная пробивка, гибка, сварка, штамповка).<br>
+          <span style="font-weight: 700;">Специализация компании</span> - разработка и производство корпусной продукции для ведущих отечественных IT компаний.<br>
+          Мы ищем системного и ответственного человека с активной жизненной позицией готового расти вместе с компанией.<br>
+          <span style="font-weight: 700;">Ключевая обязанность</span> - обеспечение технологической подготовки производства<br><br>
+          <button id="btn1">Откликнуться на вакансию</button></p> 
+        </div> 
+      <div id="tabs-2"> <h2>В ООО "Пышка" требуется уборщица</h2> 
+        <img src="i2.jpg" alt="уборщица" style=" width: 100%;">
+        <p><span style="font-weight: 700;">Требуемый опыт работы</span>: 1–3 года<br>
+          Полная занятость, полный день<br>
+          <span style="font-weight: 700;">Обязанности:</span><br>          
+          - Проводит уборку в помещениях от отходов производства и мусора<br>          
+          - Перемещает и складирует собранные отходы, мусор в установленное место.<br>          
+          - Чистит и дезинфицирует урны для мусора, размещает их в установленных местах.<br>          
+          - Проводит уборку и дезинфицирование помещения уборных, душевых, гардеробных и иных мест коллективного пользования в учреждении.<br>          
+          - Сообщает о необходимости замены или неисправности инвентаря (в случае выявления таковой).<br>          
+          - Информирует непосредственного руководителя о невозможности выполнения работ вследствие производственной необходимости, отсутствия инструментов, материалов или иных обстоятельств.<br><br>
+          <button id="btn2">Откликнуться на вакансию</button></p> </p> </div>
+       <div id="tabs-3"> <h2>В кафе "Лето" требуется официант</h2> 
+        <img src="i3.jpg" alt="официант" style=" width: 100%;">
+      <p><span style="font-weight: 700;">Требуемый опыт работы</span>: 1–3 года<br>  
+        Полная занятость, гибкий график<br>          
+        <span style="font-weight: 700;">Возможна подработка</span>: по вечерам<br>          
+        <span style="font-weight: 700;">Обязанности:</span><br>  
+        — Обязан быть приветливым и уважительным к гостям заведения;<br>  
+        — Досконально знать меню и винную карту;<br>  
+        — Знать и качественно выполнять все правила по обслуживанию гостей;<br>  
+        — Опрятно выглядеть;<br>  
+        — Корректно заполнять счёт и рассчитать гостя;<br>  
+        — Проходить медосмотр и быть здоровым на работе;<br>  
+        — Знать и выполнять правила техники безопасности в заведении <br><br>
+        <button id="btn3">Откликнуться на вакансию</button></p> </div> 
+      </div>
+      <div id="dialog1" title="Отставить резюме на вакансию Инженер-технолог">
+        <h3>Резюме</h3>
+        <form action="">
+          ФИО: <input type="text"><br><br>
+          Пол: <input type="radio" name="browser" value="m">M<input type="radio" name="browser" value="zh"> Ж<br><br>
+          Дата рождения:  <input type="text"  id="date"><br><br>
+          Город: <input type="text"  id="city"><br><br>
+          Стаж: <p style="display: inline;" id="sliderValue"></p> лет/года
+          <br><br>
+          <div id="slider" style="width: 100%;"></div> <br>
+          Телефон: <input type="text"><br><br>
+          EMAIL: <input type="text"><br><br>
+          Дополнительная информция: <textarea name="comment" cols="60" rows="3"></textarea><br><br>
+          Ваша потенциальная зарплата: <span name="comment"  id="zp1">??? </span><a href="#" title="Нажмите на это поле из знаков вопросов и программа выведет Вам потенциальную ЗП в зависимости от стажа и выбранной должности"> &#63;</a><br><br>
+        </form>
+        <input type="button" class="vse" value="Отправить">
+      </div>
+      <div id="dialog2" title="Отставить резюме на вакансию Уборщица">
+        <h3>Резюме</h3>
+        <form action="">
+          ФИО: <input type="text"><br><br>
+          Пол: <input type="radio" name="browser" value="m">M<input type="radio" name="browser" value="zh"> Ж<br><br>
+          Дата рождения:  <input type="text"  id="date2"><br><br>
+          Город: <input type="text"  id="city2"><br><br>
+          Стаж: <p style="display: inline;" id="sliderValue2"></p> лет/года
+          <br><br>
+          <div id="slider2" style="width: 100%;"></div> <br>
+          Телефон: <input type="text"><br><br>
+          EMAIL: <input type="text"><br><br>
+          Дополнительная информция: <textarea name="comment" cols="60" rows="3"></textarea><br><br>
+          Ваша потенциальная зарплата: <span name="comment"  id="zp2"> ??? </span><a href="#" title="Нажмите на это поле из знаков вопросов и программа выведет Вам потенциальную ЗП в зависимости от стажа и выбранной должности"> &#63;</a><br><br>
+        </form>
+        <input type="button" class="vse" value="Отправить">
+      </div>
+      <div id="dialog3" title="Отставить резюме на вакансию Официант">
+        <h3>Резюме</h3>
+        <form action="">
+          ФИО: <input type="text"><br><br>
+          Пол: <input type="radio" name="browser" value="m">M<input type="radio" name="browser" value="zh"> Ж<br><br>
+          Дата рождения:  <input type="text"  id="date3"><br><br>
+          Город: <input type="text"  id="city3"><br><br>
+          Стаж: <p style="display: inline;" id="sliderValue3"></p> лет/года
+          <br><br>
+          <div id="slider3" style="width: 100%;"></div> <br>
+          Телефон: <input type="text"><br><br>
+          EMAIL: <input type="text"><br><br>
+          Дополнительная информция: <textarea name="comment" cols="60" rows="3"></textarea><br><br>
+          Ваша потенциальная зарплата: <span name="comment"  id="zp3"> ??? </span><a href="#" title="Нажмите на это поле из знаков вопросов и программа выведет Вам потенциальную ЗП в зависимости от стажа и выбранной должности"> &#63;</a><br><br>
+          
+        </form>
+        <input type="button" class="vse" value="Отправить">
+      </div>
+      <div class="otpr" title="Отправить резюме?">Ваш потенциальный работодатель обработает Ваше резюме и, в случае необходимости, ответит в ближашее время.</div>
+  <p><a href="index.html">назад </a></p>
+
+  <script type="text/javascript">
+    $(function(){
+      $("#accordion" ).accordion({  collapsible: true });   
+      $('#tabs').tabs();
+      $('#dialog1').dialog({ autoOpen: false, width: 500 });
+      $('#dialog2').dialog({ autoOpen: false, width: 500 });
+      $('#dialog3').dialog({ autoOpen: false, width: 500 });
+      $('.otpr').dialog({ autoOpen: false, width: 300, buttons:{
+        "Да": function(){ alert("Ваше резюме отправлено. Спасибо!");  },
+        "Нет": function(){alert("Ваше резюме не отправлено");}
+    }
+	});
+      $("#btn1").click(function(){ 
+        $( "#dialog1" ).dialog('open'); 
+      })
+      $("#btn2").click(function(){ 
+        $( "#dialog2" ).dialog('open'); 
+      })
+      $("#btn3").click(function(){ 
+        $( "#dialog3" ).dialog('open'); 
+      })
+      $("#date").datepicker({ dateFormat: "dd.mm.yy" });
+      $("#date2").datepicker({ dateFormat: "dd.mm.yy" });
+      $("#date3").datepicker({ dateFormat: "dd.mm.yy" });
+      $('#slider').slider({
+		    min: 0,
+	    	max: 30,
+        change: function (event, ui){
+            var val = $('#slider').slider('value');
+            $('#sliderValue').html(val);
+        }
+    });
+    $('#slider2').slider({
+		    min: 0,
+	    	max: 30,
+        change: function (event, ui){
+            var val = $('#slider2').slider('value');
+            $('#sliderValue2').html(val);
+        }
+    });
+    $('#slider3').slider({
+		    min: 0,
+	    	max: 30,
+        change: function (event, ui){
+            var val = $('#slider3').slider('value');
+            $('#sliderValue3').html(val);
+        }
+    });
+    var city = ["Москва", "Уфа", "Санкт-Петербург", "Казань", "Новосибирск", "Сочи", "Калининград", "Стерлитамак", "Бирск", "Симферополь", "Краснодар", "Красноярск", "Оренбург"]; 
+	  $("#city" ).click(function(){
+		$("#city").autocomplete({ source: city });
+	});
+  $("#city2" ).click(function(){
+		$("#city2").autocomplete({ source: city });
+	});
+  $("#city3" ).click(function(){
+		$("#city3").autocomplete({ source: city });
+	});
+  $(".vse" ).click(function(){
+		$('.otpr').dialog('open'); })
+  $("#zp1" ).click(function(){
+    var k = $('#slider').slider('value');
+    if (k<=2){
+      var zp = 20000*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 25000*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 30000*(1+k/10);
+    }
+    document.getElementById('zp1').innerHTML = zp;
+  })
+  $("#zp2" ).click(function(){
+    var k = $('#slider2').slider('value');
+    if (k<=2){
+      var zp = 8000*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 10000*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 11000*(1+k/10);
+    }
+    document.getElementById('zp2').innerHTML = zp;
+  })
+  $("#zp3" ).click(function(){
+    var k = $('#slider3').slider('value');
+    if (k<=2){
+      var zp = 10000*(1+k/10);
+    }
+    if (k>2 && k<5){
+      var zp = 13000*(1+k/10);
+    }
+    if (k>=5){
+      var zp = 16000*(1+k/10);
+    }
+    document.getElementById('zp3').innerHTML = zp;
+  })
+  $("td.td_top a").tooltip();
+    });
+</script>
+</body>
+</html>
