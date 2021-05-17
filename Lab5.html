@@ -1,0 +1,33 @@
+<html lang"ru">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<head>
+  <style>
+   
+  </style>
+  <link rel="stylesheet" href="jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="jquery-ui.js"></script>
+<script src="jquery.myPlugin.js"></script>
+</head>
+<body>
+  <h1> Лабораторная работа №5</h1>
+  <h1>Игра "Встречка"</h1>
+  <a href="index.html">Назад</a> <br>
+  <h2>Ваш рекорд: <span id="rec"></span></h2>
+  <canvas id="canvas"></canvas>
+  <div id="start" title="Начать игру">"Встречка" - это симуляция гоночной игры, но фишка в том, что противники движутся Вам навстречу, как будто Вы едете по встречной полосе.
+       <br> <br>Управляя "болидом" внизу полня, Вам необходимо обходить препятствия: маленькие машинки-квадратики
+      , которые движутся вам навстречу. <br><br>Удачи!
+  </div>
+  <div id="itog" title="Вы проиграли!">Ваш результат: <span id="itog-span">0</span><br>Хотите сыграть еще раз?</div></div>
+  <script type="text/javascript">
+   k=0;
+
+  $( "#itog" ).dialog({autoOpen: false, width: 300, buttons:{
+        "Да":function(){ $( "#itog" ).dialog('close'); $('#itog').myPlugin('start');}, "Нет": function(){ $( "#itog" ).dialog('close')}}});
+  $( "#start" ).dialog({width: 500, buttons:{
+        "Играть!": function() { $('#start').myPlugin('start');}}});
+         </script>
+</body>
+</html>
